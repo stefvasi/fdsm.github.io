@@ -4,7 +4,7 @@ title: "IIL Diffractive Sonic Dialogues"
 author: "SS"
 categories: performances
 tags: [performance, reykjavik]
-image: mengi-5-10-2024.png
+image: mengi-5-10-2024.jpg
 ---
 
 
