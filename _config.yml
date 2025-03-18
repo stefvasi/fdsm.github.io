@@ -1,5 +1,9 @@
 # Site Build Settings
 
+url: "https://www.stefanosskialivas.com"
+baseurl: ""  # Keep this empty unless your site is in a subdirectory
+
+
 # jekyll-paginate configuration
 paginate:            5
 
