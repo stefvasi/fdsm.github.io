@@ -5,7 +5,7 @@ baseurl: ""  # Keep this empty unless your site is in a subdirectory
 
 
 # jekyll-paginate configuration
-paginate:            5
+paginate:            9
 
 # Build settings
 markdown:            kramdown
