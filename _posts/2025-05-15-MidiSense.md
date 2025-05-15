@@ -4,7 +4,7 @@ title: "MidiSense"
 author: "SS"
 categories: research
 tags: [research,midisense,hardware]
-image: midisense_assemb.jpg
+image: midisense_assemb.jpeg
 ---
 
 
