@@ -11,6 +11,7 @@ menu:
 - {name: 'Music', url: 'music'}
 - {name: 'Mixtapes',      url: 'mixtapes'}
 - {name: 'Publications',       url: 'publications'}
+- {name: 'Research',       url: 'research'}
 - {name: 'About',              url: 'about'}
 - {name: 'Contact',            url: 'contact'}
 
