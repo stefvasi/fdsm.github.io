@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Performance - S27 #19"
+title: "Octopus: Multi-sensory display of EEG Data"
 author: "SS"
-categories: performances
-tags: [performance,reykjavik]
-image: S2719.jpg
+categories: research
+tags: [research,reykjavik]
+image: EEG_DALLE.png
 ---
