@@ -7,7 +7,7 @@ tags: [performance,reykjavik]
 image: space-odyssey-b.jpg
 ---
 
-17.12.24 > Performance with Nicola Privato at Space Odyssey, in Reykjavik. Two solo performances with <a href="https://iil.is/research/stacco">Stacco</a> and Electromagnetic Field inductors, and a duet featuring text-to-audio prompting with StableAudio.
+17.12.24 > Performance with <a href="https://nicolaprivato.com/">Nicola Privato</a> at Space Odyssey, in Reykjavik. Two solo performances with <a href="https://iil.is/research/stacco">Stacco</a> and Electromagnetic Field inductors, and a duet featuring text-to-audio prompting with StableAudio.
 
 <br>
 <br>
