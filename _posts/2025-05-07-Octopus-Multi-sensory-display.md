@@ -11,7 +11,7 @@ image: EEG_DALLE.png
 The project is inspired by the sensory system of the octopus, hence borrowing its name from this magnificent, highly intelligent creature. Each leg of the Octopus is capable of different sensory modalities including touch, taste, smell and chemical analysis.
 <br>
 <br>
-After a successful application the project acquired grant from <a href="https://en.rannis.is/funding/research/icelandic-student-innovation-fund/">Rannis</a> -the Icelandic Centre for Research- and will be realised in collaboration with the PhD researcher <a href="http://crozzoli.com/">Miguel Angel Crozzoli</a> and the Intelligent Instruments Lab at the
+After a successful application the project acquired grant from <a href="https://en.rannis.is/funding/research/icelandic-student-innovation-fund/">Rannis</a> -the Icelandic Centre for Research- and will be realised in collaboration with the PhD researcher <a href="https://crozzoli.com/">Miguel Angel Crozzoli</a> and the Intelligent Instruments Lab at the
 University of Iceland. The goal of this research project is  the design and development of a software/hardware interface that helps connect
 data with physical exploration, by mapping the data into a physical artifact that can be sculpted into
 different geometries enabling an embodied multi-sensory experience.
