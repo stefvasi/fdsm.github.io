@@ -12,6 +12,7 @@ menu:
 - {name: 'Mixtapes',      url: 'mixtapes'}
 - {name: 'Publications',       url: 'publications'}
 - {name: 'Research',       url: 'research'}
+- {name: 'Optical Scores',               url: 'optical-scores'}
 - {name: 'About',              url: 'about'}
 - {name: 'Contact',            url: 'contact'}
 
