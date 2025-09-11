@@ -10,7 +10,7 @@ menu:
 - {name: 'Live Performances',  url: 'performances'}
 - {name: 'Music', url: 'music'}
 - {name: 'Mixtapes',      url: 'mixtapes'}
-- {name: 'Publications',       url: 'publications'}
+# - {name: 'Publications',       url: 'publications'}
 - {name: 'Research',       url: 'research'}
 - {name: 'Optical Scores',               url: 'optical-scores'}
 - {name: 'About',              url: 'about'}
