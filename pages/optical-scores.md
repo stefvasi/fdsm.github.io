@@ -32,10 +32,14 @@ The project has been applied for funding for further development and disseminati
      <div>
       <img src="/assets/img/iil_wordmark.jpg" alt="" style="width: 100%; height: auto;">
     </div>
+     <div>
+      <img src="/assets/img/Raflost.png" alt="" style="width: 50%; height: auto;">
+    </div>
   </div>
   
   <!-- Single image column -->
   <div style="flex: 1;">
     <img src="/assets/img/EMScores4.png" alt="EMScores4" style="width: 100%; height: auto;">
   </div>
+
 </div>
