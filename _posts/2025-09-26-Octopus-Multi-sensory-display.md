@@ -18,8 +18,7 @@ The project is inspired by the sensory system of the octopus whose tentacles are
 
 “Octopus” is designed on purpose to be versatile and customizable. It serves as an interface that helps connect data with physical exploration, by mapping the data into a physical artifact that can be sculpted into different geometries, enabling an embodied experience. As such, “Octopurs” allows for easy deployment of artifacts for interactive data exploration through tactile engagement. Additionally, “Octopus” is designed to support multiple wearable devices interacting with the same dataset, providing for collaborative data exploration. The configuration of the haptic feedback has three variables: vibrator index, intensity, and duration. The optimal frequency for the vibration of the LRA is the resonant frequency of the system and, it’s defined by the hardware's physical characteristics. 
 
-The development of the project took place in the summer of 2025 at the <a href="https:\\iil.is">Intelligent Instruments Lab</a>, University of Iceland, and has been funded by <a href="https://en.rannis.is/funding/research/icelandic-student-innovation-fund/">Rannis' Student Innovation Fund</a> -the Icelandic Centre for Research- and was be realised in collaboration with the PhD researcher <a href="https://crozzoli.com/">Miguel Angel Crozzoli</a> and the Intelligent Instruments Lab at the
-University of Iceland. 
+The development of the project took place in the summer of 2025 at the <a href="https:\\iil.is">Intelligent Instruments Lab</a>, University of Iceland, and has been funded by <a href="https://en.rannis.is/funding/research/icelandic-student-innovation-fund/">Rannis' Student Innovation Fund</a> and was be realised in collaboration with the PhD researcher <a href="https://crozzoli.com/">Miguel Angel Crozzoli</a>. 
 
 ![Translator_Unit](/assets/img/Octopus_main_post/sleeve_on.png)
 Fig. 1 - Sleeve		   	  
