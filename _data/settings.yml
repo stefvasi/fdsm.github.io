@@ -1,0 +1,13 @@
+menu:
+  - {name: 'performances', url: 'performances'}
+  - {name: 'music', url: 'music'}
+  - {name: 'mixtapes', url: 'mixtapes'}
+  - {name: 'research', url: 'research'}
+  - {name: 'optical scores', url: 'optical-scores'}
+  - {name: 'about', url: 'about'}
+  - {name: 'contact', url: 'contact'}
+
+social:
+  - {icon: 'instagram', link: 'https://www.instagram.com/_f_d_s_m_/'}
+  - {icon: 'facebook', link: 'https://www.facebook.com/stefanos.skialivas'}
+  - {icon: 'envelope', link: 'mailto:stefvasi@gmail.com'}

@@ -1,0 +1,517 @@
+---
+---
+
+// ─── variables ───────────────────────────────────────────
+$font:       'DM Mono', monospace;
+$bg:         #0a0a0a;
+$fg:         #c8c8c8;
+$dim:        #555;
+$accent:     #c8c8c8;
+$max-width:  860px;
+$gutter:     24px;
+
+// ─── reset ───────────────────────────────────────────────
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+// ─── base ────────────────────────────────────────────────
+html {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $font;
+  background: $bg;
+  color: $fg;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background: $fg;
+  color: $bg;
+}
+
+a {
+  color: $fg;
+  text-decoration: none;
+  border-bottom: 1px solid $dim;
+  transition: border-color 0.2s;
+  &:hover {
+    border-color: $fg;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.5rem; }
+h3 { font-size: 1rem; margin: 1.2rem 0 0.4rem; }
+
+p {
+  margin: 1em 0;
+  line-height: 1.65;
+}
+
+ul, ol {
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+blockquote {
+  border-left: 2px solid $dim;
+  padding-left: $gutter;
+  color: $dim;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+iframe {
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+// ─── layout ──────────────────────────────────────────────
+.content {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: $gutter;
+  flex: 1;
+}
+
+// ─── header ──────────────────────────────────────────────
+.site-header {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: $gutter;
+  padding-bottom: 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 $gutter;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: none;
+  color: $fg;
+  white-space: nowrap;
+  &:hover { border: none; }
+  &::after {
+    content: '▮';
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+    font-size: 0.9em;
+  }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 $gutter * 0.75;
+  a {
+    font-size: 0.8rem;
+    color: $dim;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+    &:hover {
+      color: $fg;
+      border: none;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: $fg;
+  font-family: $font;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    position: relative;
+  }
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    &.open {
+      display: flex;
+    }
+    a {
+      padding: 0.4rem 0;
+      font-size: 0.85rem;
+    }
+  }
+}
+
+// ─── separator ───────────────────────────────────────────
+.site-header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, $dim, transparent);
+  margin-top: $gutter * 0.75;
+}
+
+// ─── home / post list ────────────────────────────────────
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2px;
+}
+
+.post-item {
+  display: block;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #111;
+
+  &:hover {
+    border: none;
+    .post-thumb {
+      opacity: 0.4;
+      transform: scale(1.03);
+    }
+    .post-info {
+      opacity: 1;
+    }
+  }
+}
+
+.post-thumb {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.post-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $gutter * 0.6;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+.post-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: $fg;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.post-meta {
+  font-size: 0.7rem;
+  color: $dim;
+  letter-spacing: 0.04em;
+}
+
+// ─── pagination ──────────────────────────────────────────
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: $gutter 0;
+  font-size: 0.8rem;
+  a {
+    color: $dim;
+    &:hover { color: $fg; }
+  }
+}
+
+// ─── post / article ──────────────────────────────────────
+.post, .page {
+  max-width: 640px;
+}
+
+.post-header {
+  margin-bottom: 1.5rem;
+  time {
+    font-size: 0.8rem;
+    color: $dim;
+    letter-spacing: 0.04em;
+  }
+}
+
+.post-image {
+  margin: 1.5rem 0;
+  img {
+    width: 100%;
+  }
+}
+
+.post-body, .page-body {
+  a {
+    border-bottom: 1px solid $dim;
+    &:hover { border-color: $fg; }
+  }
+  img {
+    margin: 1.5rem auto;
+  }
+}
+
+// ─── category page ───────────────────────────────────────
+.category-page {
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+// ─── footer ──────────────────────────────────────────────
+.site-footer {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: $gutter * 2 $gutter $gutter;
+  font-size: 0.75rem;
+  color: $dim;
+}
+
+.footer-links {
+  margin-bottom: 0.5rem;
+  a {
+    color: $dim;
+    border: none;
+    margin-right: $gutter * 0.5;
+    &:hover { color: $fg; border: none; }
+  }
+}
+
+.footer-copy {
+  color: darken($dim, 15%);
+}
+
+// ─── embeds ──────────────────────────────────────────────
+// make iframes (soundcloud, youtube, instagram) behave
+.post-body iframe,
+.page-body iframe {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+// instagram embed overrides
+.post-body .instagram-media,
+.page-body .instagram-media {
+  margin: 1.5rem auto !important;
+}
+
+// ─── images in content ───────────────────────────────────
+.post-body img,
+.page-body img {
+  max-width: 100%;
+  margin: 1rem auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+    transform: scale(1.02);
+  }
+}
+
+// ─── gallery ────────────────────────────────────────────
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 1.5rem 0;
+
+  &.gallery-single {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  a {
+    border: none;
+    display: block;
+    overflow: hidden;
+    &:hover { border: none; }
+    &:hover img {
+      opacity: 0.7;
+      transform: scale(1.02);
+    }
+  }
+
+  &.gallery-cover {
+    img {
+      height: 280px;
+      object-fit: cover;
+    }
+  }
+
+  .gallery-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+.gallery-caption {
+  font-size: 0.75rem;
+  color: $dim;
+  margin-top: 6px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin: 2rem 0;
+  img {
+    height: 50px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    margin: 0;
+    &:hover {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+// ─── glightbox override ─────────────────────────────────
+.glightbox {
+  border: none;
+  &:hover { border: none; }
+}
+
+// ─── project log ────────────────────────────────────────
+.project-status {
+  font-size: 0.8rem;
+  color: $dim;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.5rem;
+  span {
+    color: $fg;
+  }
+}
+
+.log-divider {
+  font-size: 0.75rem;
+  color: $dim;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 2.5rem 0 1.5rem;
+  &::before, &::after {
+    content: '───';
+    margin: 0 0.5em;
+  }
+}
+
+.log-entry {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 1px solid $dim;
+  background: rgba(255, 255, 255, 0.02);
+
+  .gallery {
+    margin: 1rem 0 0.5rem;
+  }
+
+  .gallery-caption {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.log-date {
+  font-size: 0.75rem;
+  color: $dim;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+}
+
+.log-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $fg;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.log-body {
+  font-size: 0.85rem;
+  color: $fg;
+  line-height: 1.6;
+  p { margin: 0.5em 0; }
+}
+
+// ─── utility ─────────────────────────────────────────────
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+// ─── table ───────────────────────────────────────────────
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+th, td {
+  border: 1px solid $dim;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.85rem;
+}

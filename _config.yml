@@ -1,0 +1,24 @@
+url: "https://www.stefanosskialivas.com"
+baseurl: ""
+
+title: "Stefanos Skialivas"
+description: "artist / researcher"
+author: "Stefanos Skialivas"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:title
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+paginate: 12
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/about_crop.jpg

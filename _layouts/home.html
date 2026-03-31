@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="post-list">
+  {% for post in paginator.posts %}
+  <a href="{{ site.baseurl }}{{ post.url }}" class="post-item">
+    {% if post.image %}
+    <div class="post-thumb" style="background-image: url('{{ site.baseurl }}/assets/img/{{ post.image }}')"></div>
+    {% endif %}
+    <div class="post-info">
+      <span class="post-title">{{ post.title }}</span>
+      <span class="post-meta">{{ post.date | date: "%Y.%m.%d" }} / {{ post.categories | first }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">&larr; newer</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}">older &rarr;</a>
+  {% endif %}
+</div>

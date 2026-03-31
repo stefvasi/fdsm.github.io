@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="footer-links">
+    {% for item in site.data.settings.social %}
+      {% if item.icon == 'envelope' %}
+        <a href="{{ item.link }}">mail</a>
+      {% else %}
+        <a href="{{ item.link }}" target="_blank">{{ item.icon }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.title }}</div>
+</footer>

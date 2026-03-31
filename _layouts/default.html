@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main class="content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      // lightbox
+      const lightbox = GLightbox({ selector: '.glightbox' });
+
+      // mobile menu
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.site-nav').classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>
