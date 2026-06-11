@@ -15,24 +15,26 @@ permalink: /optical-scores
 
 The project has been presented in [solo performances]({% post_url 2025-07-26-Space_Odyssey_Ambient_July %}) and [artistic collaborations]({% post_url 2024-12-17-SpaceOdyssey %}) (Árni Valur, <a href="https://nicolaprivato.com/">Nicola Privato</a>, <a href="https://crozzoli.com/">Miguel Angel Crozzoli</a>, <a href="https://gonmuruaga.com/">Gon Muruaga</a>). Future collaborations include compositions and performances with <a href="https://thorannabjornsdottir.com/">Þóranna Björnsdóttir</a> and <a href="https://aki.is/">Áki Ásgeirsson</a>. *Optical scores* design and development is supported by the <a href="https://iil.is">Intelligent Instruments Lab</a> and <a href="https://raflost.is">Raflost festival</a> in Iceland. The project has been granted funding by the Nordic Culture Point (Culture and Art Programme) for further development and dissemination.
 
+*Optical Scores* has received funding from the Culture and Art Programme financed by the Nordic Council of Ministers.
+
 <div class="log-divider">log</div>
 
 <div class="log-entry" markdown="0">
-  <div class="log-date">2026.06</div>
+  <div class="log-date">2026.06.01 – 10</div>
   <div class="log-title">Inter Arts Center, Malmö</div>
-  <div class="log-body">Residency.</div>
+  <div class="log-body">Residency for artistic production.</div>
 </div>
 
 <div class="log-entry" markdown="0">
-  <div class="log-date">2026.05</div>
+  <div class="log-date">2026.05.22 – 29</div>
   <div class="log-title">Athens</div>
-  <div class="log-body">Workshops and presentations at KSYME and LabMAT (EKPA). Live performance at TV Control Center.</div>
+  <div class="log-body">Presentation and workshop at KSYME (22 May); <em>Optical Scores</em> live performance at KET / TV Control Center with Áki Ásgeirsson, Þóranna Björnsdóttir and Árni Valur Kristinsson (23 May); workshop at LabMAT, University of Athens (29 May).</div>
 </div>
 
 <div class="log-entry" markdown="0">
-  <div class="log-date">2026.04 – 05</div>
+  <div class="log-date">2026.04.26 – 05.06</div>
   <div class="log-title">Augmented Performance Lab, Aalborg University, Copenhagen</div>
-  <div class="log-body">Residency for artistic production and workshops.</div>
+  <div class="log-body">Residency for artistic production and workshop.</div>
 </div>
 
 <div class="log-entry" markdown="0">
@@ -45,4 +47,6 @@ The project has been presented in [solo performances]({% post_url 2025-07-26-Spa
   <img src="/assets/img/iil_wordmark.jpg" alt="Intelligent Instruments Lab logo">
   <img src="/assets/img/Raflost.png" alt="Raflost festival logo">
   <img src="/assets/img/KKN-Logotype_UK_sin.png" alt="Nordic Culture Point logo">
+  <img src="/assets/img/nmr_endorsement_en.png" alt="Funded by the Nordic Council of Ministers">
+  <img src="/assets/img/inter_arts_center.svg" alt="Inter Arts Center logo">
 </div>
