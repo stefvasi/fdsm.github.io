@@ -24,6 +24,6 @@ Performance at Mengi, together with Tomy Manoury, Betty Accorsi, Thor Magnusson,
 
 
 <div class="gallery" markdown="0">
-  <img src="/assets/img/MemlNauts_Workshop.jpg" alt="MEMLNauts Workshop">
-  <img src="/assets/img/MENGI_BrainDeadEnsemble.jpg" alt="MEMLNauts BrainDead Ensemble">
+  <img loading="lazy" src="/assets/img/MemlNauts_Workshop.jpg" alt="MEMLNauts Workshop">
+  <img loading="lazy" src="/assets/img/MENGI_BrainDeadEnsemble.jpg" alt="MEMLNauts BrainDead Ensemble">
 </div>

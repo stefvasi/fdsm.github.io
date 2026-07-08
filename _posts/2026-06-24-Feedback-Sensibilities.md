@@ -24,12 +24,12 @@ Feedback is the shared space of the set — a semi-structured improvisation in w
 <br>
 
 <div class="gallery" markdown="0">
-  <img src="/assets/img/Feedback_Sensibilities_post/fs_saxophone_2.jpg" alt="Feedback saxophone with bell-mounted speaker">
-  <img src="/assets/img/Feedback_Sensibilities_post/fs_circuit_boards.jpg" alt="Circuit boards from wireless mice mounted in aluminium frames">
+  <img loading="lazy" src="/assets/img/Feedback_Sensibilities_post/fs_saxophone_2.jpg" alt="Feedback saxophone with bell-mounted speaker">
+  <img loading="lazy" src="/assets/img/Feedback_Sensibilities_post/fs_circuit_boards.jpg" alt="Circuit boards from wireless mice mounted in aluminium frames">
 </div>
 
 <div class="gallery gallery-single" markdown="0">
-  <img src="/assets/img/Feedback_Sensibilities_post/fs_coil_probe.jpg" alt="Coil inductor probe with finger attachment">
+  <img loading="lazy" src="/assets/img/Feedback_Sensibilities_post/fs_coil_probe.jpg" alt="Coil inductor probe with finger attachment">
 </div>
 
 <br>
@@ -37,5 +37,5 @@ Feedback is the shared space of the set — a semi-structured improvisation in w
 The performance and its instruments are documented in the NIME 2026 music proceedings: <a href="https://nime.org/proceedings/2026/nime2026_music_37.pdf">Feedback Sensibilities (PDF)</a>. Developed at the <a href="https://iil.is">Intelligent Instruments Lab</a>, University of Iceland.
 
 <div class="logo-row" markdown="0">
-  <img src="/assets/img/iil_wordmark.jpg" alt="Intelligent Instruments Lab logo">
+  <img loading="lazy" src="/assets/img/iil_wordmark.jpg" alt="Intelligent Instruments Lab logo">
 </div>

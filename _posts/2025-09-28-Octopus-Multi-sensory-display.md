@@ -4,7 +4,7 @@ title: "Octopus: A Modular Haptic Feedback Interface"
 author: "SS"
 categories: research
 tags: [research, hardware, haptics, open-source]
-image: Octopus_main_post/Octopus_post.png
+image: Octopus_main_post/Octopus_post.jpg
 ---
 
 The project explores the design and development of an open-ended, modular hardware/software interface named "Octopus" to expand research in multi-modal data exploration. The system is designed for integration with the "Dark Sonification" framework developed by PhD researcher <a href="https://crozzoli.com/">Miguel Angel Crozzoli</a>, an interactive data display system for exploratory data analysis through affect, and focuses on applying data physicalization techniques through haptic feedback. "Octopus" is an open-source, customizable device that provides an embodied interface for data navigation and interaction. By bridging the gap between flexible software and reconfigurable hardware, the project contributes to the emerging field of Data-Human Interaction and addresses the societal need for accessible and inclusive scientific tools. The interface's design emphasizes versatility, enabling researchers to rapidly prototype new ideas and integrate novel sensory modalities for enhanced data understanding. The project is inspired by the sensory system of the octopus whose tentacles are capable of different sensory modalities including touch, taste, smell and chemical analysis.
@@ -18,17 +18,17 @@ The project explores the design and development of an open-ended, modular hardwa
 <br>
 
 <div class="gallery" markdown="0">
-  <img src="/assets/img/Octopus_main_post/sleeve_on.png" alt="Octopus wearable sleeve">
-  <img src="/assets/img/Octopus_main_post/com_node.png" alt="Octopus communication node">
+  <img loading="lazy" src="/assets/img/Octopus_main_post/sleeve_on.jpg" alt="Octopus wearable sleeve">
+  <img loading="lazy" src="/assets/img/Octopus_main_post/com_node.jpg" alt="Octopus communication node">
 </div>
 
 <div class="gallery" markdown="0">
-  <img src="/assets/img/Octopus_main_post/sleeve_1.jpg" alt="Octopus sleeve detail">
-  <img src="/assets/img/Octopus_main_post/trans_unit.png" alt="Octopus translator unit">
+  <img loading="lazy" src="/assets/img/Octopus_main_post/sleeve_1.jpg" alt="Octopus sleeve detail">
+  <img loading="lazy" src="/assets/img/Octopus_main_post/trans_unit.jpg" alt="Octopus translator unit">
 </div>
 
 <div class="gallery gallery-single" markdown="0">
-  <img src="/assets/img/Octopus_main_post/inputs.png" alt="Octopus input modules">
+  <img loading="lazy" src="/assets/img/Octopus_main_post/inputs.jpg" alt="Octopus input modules">
 </div>
 
 <br>
@@ -48,6 +48,6 @@ The development of the project took place in the summer of 2025 at the <a href="
 [2] Crozzoli, M.A. and Magnusson, T. (2025) "Data Perceptualization through Affect in Dark Sonification." Available at: <a href="https://doi.org/10.34626/2025_XCOAX_013">https://doi.org/10.34626/2025_XCOAX_013</a>
 
 <div class="logo-row" markdown="0">
-  <img src="/assets/img/iil_wordmark.jpg" alt="Intelligent Instruments Lab logo">
-  <img src="/assets/img/rannis_logo_2.png" alt="Rannis logo">
+  <img loading="lazy" src="/assets/img/iil_wordmark.jpg" alt="Intelligent Instruments Lab logo">
+  <img loading="lazy" src="/assets/img/rannis_logo_2.png" alt="Rannis logo">
 </div>

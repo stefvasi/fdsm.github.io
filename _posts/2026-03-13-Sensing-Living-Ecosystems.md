@@ -30,8 +30,8 @@ The node is headless: it samples every 500 ms to a local microSD archive and pub
 <br>
 
 <div class="gallery" markdown="0">
-  <img src="/assets/img/Vegetal_Media_post/vegetal_hero.jpg" alt="The field kit set up in a tropical greenhouse">
-  <img src="/assets/img/Vegetal_Media_post/vegetal_kit_greenhouse.jpg" alt="The field kit among greenhouse plants">
+  <img loading="lazy" src="/assets/img/Vegetal_Media_post/vegetal_hero.jpg" alt="The field kit set up in a tropical greenhouse">
+  <img loading="lazy" src="/assets/img/Vegetal_Media_post/vegetal_kit_greenhouse.jpg" alt="The field kit among greenhouse plants">
 </div>
 
 <br>
@@ -43,8 +43,8 @@ The kit was first set up inside a tropical greenhouse, logging CO₂, the spectr
 <br>
 
 <div class="gallery" markdown="0">
-  <img src="/assets/img/Vegetal_Media_post/vegetal_greenhouse_wide.jpg" alt="The field kit logging data inside a lush greenhouse">
-  <img src="/assets/img/Vegetal_Media_post/vegetal_banana_flower.jpg" alt="A flowering banana plant in the greenhouse">
+  <img loading="lazy" src="/assets/img/Vegetal_Media_post/vegetal_greenhouse_wide.jpg" alt="The field kit logging data inside a lush greenhouse">
+  <img loading="lazy" src="/assets/img/Vegetal_Media_post/vegetal_banana_flower.jpg" alt="A flowering banana plant in the greenhouse">
 </div>
 
 <br>
@@ -56,8 +56,8 @@ Sealed into a weatherproof enclosure, the same kit can be deployed outdoors — 
 <br>
 
 <div class="gallery" markdown="0">
-  <img src="/assets/img/Vegetal_Media_post/vegetal_deploy_banana.jpg" alt="The weatherproofed kit deployed at the base of a banana plant">
-  <img src="/assets/img/Vegetal_Media_post/vegetal_deploy_field.jpg" alt="The Vegetal Media kit and enclosure deployed in the field">
+  <img loading="lazy" src="/assets/img/Vegetal_Media_post/vegetal_deploy_banana.jpg" alt="The weatherproofed kit deployed at the base of a banana plant">
+  <img loading="lazy" src="/assets/img/Vegetal_Media_post/vegetal_deploy_field.jpg" alt="The Vegetal Media kit and enclosure deployed in the field">
 </div>
 
 <br>
@@ -75,6 +75,6 @@ The field kit was built to support the doctoral research of <a href="https://iil
 [1] Intelligent Instruments Lab (2024) "Organium," <i>AudioMostly 2024</i>. Available at: <a href="https://iil.is/pdf/2024_audiomostly_organium.pdf">https://iil.is/pdf/2024_audiomostly_organium.pdf</a>
 
 <div class="logo-row" markdown="0">
-  <img src="/assets/img/iil_wordmark.jpg" alt="Intelligent Instruments Lab logo">
-  <img src="/assets/img/Vegetal_Media_post/hi_logo_white.png" alt="University of Iceland (Háskóli Íslands) logo">
+  <img loading="lazy" src="/assets/img/iil_wordmark.jpg" alt="Intelligent Instruments Lab logo">
+  <img loading="lazy" src="/assets/img/Vegetal_Media_post/hi_logo_white.png" alt="University of Iceland (Háskóli Íslands) logo">
 </div>

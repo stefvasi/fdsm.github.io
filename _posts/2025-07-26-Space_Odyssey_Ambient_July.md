@@ -18,7 +18,7 @@ Solo performance at Space Odyssey Experimental Space - Ambient July 2025
 <br>
 
 <div class="gallery" markdown="0">
-  <img src="/assets/img/Space_Odyssey_July_1.jpg" alt="Space Odyssey July 1">
-  <img src="/assets/img/Space_Odyssey_July_Poster.jpg" alt="Space Odyssey July Poster">
+  <img loading="lazy" src="/assets/img/Space_Odyssey_July_1.jpg" alt="Space Odyssey July 1">
+  <img loading="lazy" src="/assets/img/Space_Odyssey_July_Poster.jpg" alt="Space Odyssey July Poster">
 </div>
 
