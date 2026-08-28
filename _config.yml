@@ -22,3 +22,10 @@ defaults:
       path: ""
     values:
       image: /assets/img/about_crop.jpg
+
+exclude:
+  - IDEAS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -16,6 +16,48 @@
       document.querySelector('.menu-toggle').addEventListener('click', function() {
         document.querySelector('.site-nav').classList.toggle('open');
       });
+
+      // infinite scroll for the paginated post grid (replaces the "older" click)
+      (function () {
+        var sentinel = document.getElementById('infinite-sentinel');
+        var list = document.querySelector('.post-list');
+        if (!sentinel || !list || !sentinel.dataset.nextUrl || !('IntersectionObserver' in window)) return;
+
+        var pagination = document.querySelector('.pagination');
+        if (pagination) pagination.style.display = 'none';  // JS available -> hide manual link
+        var loading = false;
+
+        var observer = new IntersectionObserver(function (entries) {
+          if (!entries[0].isIntersecting || loading) return;
+          var next = sentinel.dataset.nextUrl;
+          if (!next) { observer.disconnect(); return; }
+          loading = true;
+          fetch(next)
+            .then(function (res) { if (!res.ok) throw new Error(res.status); return res.text(); })
+            .then(function (html) {
+              var doc = new DOMParser().parseFromString(html, 'text/html');
+              doc.querySelectorAll('.post-list .post-item').forEach(function (el) {
+                list.appendChild(el);
+              });
+              var nextSentinel = doc.getElementById('infinite-sentinel');
+              var nextUrl = nextSentinel && nextSentinel.dataset.nextUrl;
+              if (nextUrl) {
+                sentinel.dataset.nextUrl = nextUrl;
+              } else {
+                delete sentinel.dataset.nextUrl;
+                observer.disconnect();
+              }
+              loading = false;
+            })
+            .catch(function () {
+              if (pagination) pagination.style.display = '';  // restore manual link on failure
+              observer.disconnect();
+              loading = false;
+            });
+        }, { rootMargin: '400px' });
+
+        observer.observe(sentinel);
+      })();
     </script>
   </body>
 </html>

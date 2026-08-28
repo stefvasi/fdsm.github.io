@@ -21,6 +21,8 @@ layout: default
     <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">&larr; newer</a>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}">older &rarr;</a>
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="load-more">older &rarr;</a>
   {% endif %}
 </div>
+
+<div id="infinite-sentinel"{% if paginator.next_page %} data-next-url="{{ site.baseurl }}{{ paginator.next_page_path }}"{% endif %}></div>
